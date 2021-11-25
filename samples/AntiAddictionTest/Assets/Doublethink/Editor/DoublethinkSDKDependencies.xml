@@ -1,0 +1,24 @@
+<dependencies>
+  <unityversion>2.2.3</unityversion>
+      <androidPackages>
+        <androidPackage spec="com.xmiles.platform:platform-core:2.2.3-releases">
+          <repositories>
+        	<repository>https://jitpack.io</repository>
+          </repositories>
+        </androidPackage>
+      </androidPackages>
+
+      <androidPackages>
+        <androidPackage spec="com.xmiles.platform:platform-functions:2.2.3-releases">
+          <repositories>
+            <repository>http://dev.yingzhongshare.com/nexus/content/groups/public/</repository>
+          </repositories>
+        </androidPackage>
+      </androidPackages>
+
+      <androidPackages>
+        <androidPackage spec="com.xmiles.platform:platform-base-antiaddiction:1.0.5.4-releases"/>
+        <androidPackage spec="com.android.support:support-v4:28.0.3"/>
+        <androidPackage spec="com.android.support:multidex:1.0.3"/>
+      </androidPackages>
+</dependencies>
