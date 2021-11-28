@@ -1,0 +1,22 @@
+NOTES ON UPGRADING
+
+Note for 0.1.1
+
+If you have already integrated the plugin and want to upgrade it to a newer version,
+you must delete the Assets/Doublethink folder, then import the new package.
+
+
+After upgrading, redo setup (click "Assets/Exernal Dependency Manager/Android Resolver/Force Resolve" on the menu).
+Do this even if you had already done this before on this project.
+
+IF YOU STILL HAVE PROBLEMS:
+
+If you have problems packaging the google library in the mainTemplate, 
+you can use the local library method, for example, https://maven.google.com is replaced with https://dl.google.com/dl/android/maven2/
+
+Before each packaging, check whether the following are added in the mainTemplate
+credentials {
+	username "xmiles-outside"
+    password "xmiles-outside"
+}
+
