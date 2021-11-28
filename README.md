@@ -70,7 +70,8 @@ _com.example.my.awesome.game_).
 
 
 In order to log in to Doublethink Game Services，you need to set up AndroidManifest and gradle。
-![click Get Resources](source/docgen/resourcesLink_0.png.png "Show the resources data")
+
+![Android Setup](source/docgen/AndroidSetup.png "Android setup")
 
 The DoublethinkGamesPluginForUnity-X.YY.ZZ Unity plugin is distributed with the Unity Play Services Resolver library. 
 This library is intended for using by any Unity plugin that requires access to Android 
@@ -99,7 +100,8 @@ Open **Asstes/Plugins/Android/mainTemplate.gradle** file specify the location an
 	    password "xmiles-outside"
 	}
 ```
-[click Get Resources](source/docgen/resourcesLink_1.png.png "Show the resources data")
+
+![click Get Resources](source/docgen/resourcesLink.png "Show the resources data")
 
 ```csharp
 	multiDexEnabled true
@@ -110,7 +112,8 @@ Open **Asstes/Plugins/Android/mainTemplate.gradle** file specify the location an
         }
     }
 ```
-[click Get Resources](source/docgen/resourcesLink_2.png.png "Show the resources data")
+
+![Android Resources](source/docgen/resources.png "Android resource data")
 
 Open **Asstes/Plugins/Android/launcherTemplate.gradle** file specify the location and add the following.
 
@@ -119,7 +122,8 @@ Open **Asstes/Plugins/Android/launcherTemplate.gradle** file specify the locatio
             APPLOG_SCHEME  : ""
         ]
 ```
-[click Get Resources](source/docgen/resourcesLink_3.png.png "Show the resources data")
+
+![Android launcherTemplate Resources](source/docgen/launcherTemplateResource.png "Android launcherTemplate Resources")
 
 Open **Asstes/Plugins/Android/gradleTemplate.properties** file specify the location and add the following.
 
@@ -129,7 +133,8 @@ Open **Asstes/Plugins/Android/gradleTemplate.properties** file specify the locat
 	android.enableJetifier=true
 	**# Android Resolver Properties End**
 ```
-[click Get Resources](source/docgen/resourcesLink_4.png.png "Show the resources data")
+
+![Android gradle template Resources](source/docgen/gradleTemplateResource.png "Android gradle template Resources")
 
 ## Configuration & Initialization Doublethink Services
 
@@ -138,11 +143,13 @@ the configuration needs to be replaced with game parameters. To do this,
 please open the following file to configure the parameters.
 
 Open ** Asstes/Doublethink/Plugins/Android/doublethink/utils/DataParams.java
-[click Get Resources](source/docgen/resourcesLink_5.png.png "Show the resources data")
+
+![Android data params Resources](source/docgen/dataParamsResource.png "Android data params Resources")
 
 Asstes/Doubletink/Prefabs/AntiaddictionHandler.prefab Add to your main scene.
 _NOTICE__:This prefab integrates content that interacts with android
-[click Get Resources](source/docgen/resourcesLink_6.png.png "Show the resources data")
+
+![Unity prefab Resources](source/docgen/unityPrefabResource.png "Unity prefab Resources")
 
 ## Sign in
 
