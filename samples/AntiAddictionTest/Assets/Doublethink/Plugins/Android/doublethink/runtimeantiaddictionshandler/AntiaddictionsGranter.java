@@ -1,15 +1,22 @@
 package com.doublethink.runtimeantiaddictionshandler;
 
+import android.app.Activity;
+import android.util.Log;
+
 import com.unity3d.player.UnityPlayer;
 import com.xmiles.antiaddictionsdk.api.AntiAddictionAPI;
 import com.xmiles.antiaddictionsdk.api.ILogoutCallback;
 import com.xmiles.antiaddictionsdk.api.LoginCallbackAdapter;
 import com.xmiles.antiaddictionsdk.net.decode.GameAccountLoginResponse;
+import com.xmiles.sceneadsdk.adcore.core.SceneAdSdk;
 
 public class AntiaddictionsGranter {
-    
+    private static String TAG = "Antiaddictions Granter ";
+    public static void Android_Initialization(Activity activity){
+        Log.d(TAG,"deviceId: "+SceneAdSdk.getDeviceId(activity));
+    }
+
     public static boolean Android_ShowLogin(){
-        //入口页面 建议在游戏主页面 调用登陆，
          return AntiAddictionAPI.getInstance().checkAndLogin(new LoginCallbackAdapter() {
             @Override
             public void onUserProtocolClicked() {

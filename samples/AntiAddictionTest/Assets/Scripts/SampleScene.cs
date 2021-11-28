@@ -59,13 +59,13 @@ public class SampleScene : MonoBehaviour
         _loginButton.gameObject.SetActive(true);
     }
 
-    private void OnOpenAgreementLinkHandle(string result)
+    private void OnOpenAgreementLinkHandle(AgreementLinkEnum linkEnum)
     {
-        Debug.Log("Sample open agreement link: " + result);
-        if (result.Equals("UserAgreement"))
+        Debug.Log("Sample open agreement link: " + linkEnum.ToString());
+        if (linkEnum == AgreementLinkEnum.UserAgreement)
         {
             Application.OpenURL("https://www.doublethinkgames.com/about-5");   
-        }else if (result.Equals("PrivacyAgreement"))
+        }else if (linkEnum == AgreementLinkEnum.PrivacyAgreement)
         {
             Application.OpenURL("https://www.doublethinkgames.com/about-3");
         }

@@ -2,6 +2,12 @@ using System;
 
 namespace Doublethink.Scripts.Services.Antiaddictions
 {
+    public enum AgreementLinkEnum
+    {
+        NONE,
+        UserAgreement,
+        PrivacyAgreement,
+    }
     public class AntiadictiionsType
     {
         public String userId;//Return to the logged-in account
