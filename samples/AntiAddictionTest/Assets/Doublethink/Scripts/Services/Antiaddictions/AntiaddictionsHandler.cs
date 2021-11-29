@@ -45,9 +45,9 @@ namespace Doublethink.Scripts.Services.Antiaddictions
                 Instance._antiaddictionsGranterClass.CallStatic("Android_Initialization", _currentActivity);
         }
 
-        public Boolean Login()
+        public Boolean Login(Boolean isAutoLogin = false)
         {
-            return Instance._antiaddictionsGranterClass.CallStatic<Boolean>("Android_ShowLogin");
+            return Instance._antiaddictionsGranterClass.CallStatic<Boolean>("Android_ShowLogin", isAutoLogin);
         }
 
         public void LoginOut()

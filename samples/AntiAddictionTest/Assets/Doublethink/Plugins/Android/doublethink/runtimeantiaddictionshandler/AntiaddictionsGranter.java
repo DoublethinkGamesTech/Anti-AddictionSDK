@@ -16,7 +16,9 @@ public class AntiaddictionsGranter {
         Log.d(TAG,"deviceId: "+SceneAdSdk.getDeviceId(activity));
     }
 
-    public static boolean Android_ShowLogin(){
+    public static boolean Android_ShowLogin(boolean isAutoLogin){
+        if (isAutoLogin)
+            AntiAddictionAPI.getInstance().setAndroidIdAutoLogin(true);
          return AntiAddictionAPI.getInstance().checkAndLogin(new LoginCallbackAdapter() {
             @Override
             public void onUserProtocolClicked() {
