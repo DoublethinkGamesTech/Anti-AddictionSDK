@@ -89,7 +89,7 @@ In the Unity editor, select **Assets > External Dependency Manager > Android Res
 The Unity External Dependency Manager library will copy the declared dependencies into 
 the **Assets/Plugins/Android/mainTemplate.gradle** directory of your Unity app.
 
-_NOTICE__:The **DoublethinkGamesPluginForUnity-X.YY.ZZ** Unity plugin 
+__NOTICE__: The **DoublethinkGamesPluginForUnity-X.YY.ZZ** Unity plugin 
 dependencies are listed in **Assets/Doublethink/Editor/DoublethinkSDKDependencies.xml**
 
 Open **Asstes/Plugins/Android/mainTemplate.gradle** file specify the location and add the following.
@@ -128,10 +128,10 @@ Open **Asstes/Plugins/Android/launcherTemplate.gradle** file specify the locatio
 Open **Asstes/Plugins/Android/gradleTemplate.properties** file specify the location and add the following.
 
 ```csharp
-	**# Android Resolver Properties Start**
+	# Android Resolver Properties Start
 	android.useAndroidX=true
 	android.enableJetifier=true
-	**# Android Resolver Properties End**
+	# Android Resolver Properties End
 ```
 
 ![Android gradle template Resources](source/docgen/gradleTemplateResource.png "Android gradle template Resources")
@@ -142,12 +142,13 @@ For the progress of the game or the normal minors to prevent addiction,
 the configuration needs to be replaced with game parameters. To do this, 
 please open the following file to configure the parameters.
 
-Open ** Asstes/Doublethink/Plugins/Android/doublethink/utils/DataParams.java
+Open **Asstes/Doublethink/Plugins/Android/doublethink/utils/DataParams.java**
 
 ![Android data params Resources](source/docgen/dataParamsResource.png "Android data params Resources")
 
-Asstes/Doubletink/Prefabs/AntiaddictionHandler.prefab Add to your main scene.
-_NOTICE__:This prefab integrates content that interacts with android
+__NOTICE__: This prefab integrates content that interacts with android
+
+**Asstes/Doubletink/Prefabs/AntiaddictionHandler.prefab** Add to your main scene.
 
 ![Unity prefab Resources](source/docgen/unityPrefabResource.png "Unity prefab Resources")
 
