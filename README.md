@@ -156,7 +156,8 @@ _NOTICE__:This prefab integrates content that interacts with android
 Log in to the interface and return bool type parameters, true means logged in success, false means not logged in
 
 ```csharp
-	AntiaddictionsHandler.Instance.Login();
+	//is auto sign in，default parameter false.will not automatically log in
+	AntiaddictionsHandler.Instance.Login(Boolean isAutoLogin);
 ```
 
 ## Sign out
@@ -209,8 +210,8 @@ Listen for these events by registering a delegate for the appropriate EventHandl
     	_loginButton.gameObject.SetActive(true);
 	}
 	/*
-	//linkEnum == AgreementLinkEnum.UserAgreement//You need to jump to the specified link address
-	//linkEnum == AgreementLinkEnum.PrivacyAgreement//You need to jump to the specified link address
+	//linkEnum == AgreementLinkEnum.UserAgreement//You need to jump to the specified link address,service agreement link
+	//linkEnum == AgreementLinkEnum.PrivacyAgreement//You need to jump to the specified link address,privacy policy link
 	*/
 	private void OnOpenAgreementLinkHandle(AgreementLinkEnum linkEnum)
 	{
