@@ -31,7 +31,7 @@ dependencies {
 // Android Resolver Dependencies Start
     implementation 'com.android.support:multidex:1.0.3' // Assets/Doublethink/Editor/DoublethinkSDKDependencies.xml:22
     implementation 'com.android.support:support-v4:28.0.3' // Assets/Doublethink/Editor/DoublethinkSDKDependencies.xml:21
-    implementation 'com.xmiles.platform:platform-base-antiaddiction:1.0.5.4-releases' // Assets/Doublethink/Editor/DoublethinkSDKDependencies.xml:20
+    implementation 'com.xmiles.platform:platform-base-antiaddiction:1.0.5.5-releases' // Assets/Doublethink/Editor/DoublethinkSDKDependencies.xml:20
     implementation 'com.xmiles.platform:platform-core:2.2.3-releases' // Assets/Doublethink/Editor/DoublethinkSDKDependencies.xml:8
     implementation 'com.xmiles.platform:platform-functions:2.2.3-releases' // Assets/Doublethink/Editor/DoublethinkSDKDependencies.xml:16
 // Android Resolver Dependencies End

@@ -2,7 +2,7 @@
   <packages>
     <package>com.android.support:multidex:1.0.3</package>
     <package>com.android.support:support-v4:28.0.3</package>
-    <package>com.xmiles.platform:platform-base-antiaddiction:1.0.5.4-releases</package>
+    <package>com.xmiles.platform:platform-base-antiaddiction:1.0.5.5-releases</package>
     <package>com.xmiles.platform:platform-core:2.2.3-releases</package>
     <package>com.xmiles.platform:platform-functions:2.2.3-releases</package>
   </packages>

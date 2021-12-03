@@ -17,7 +17,7 @@
       </androidPackages>
 
       <androidPackages>
-        <androidPackage spec="com.xmiles.platform:platform-base-antiaddiction:1.0.5.4-releases"/>
+        <androidPackage spec="com.xmiles.platform:platform-base-antiaddiction:1.0.5.5-releases"/>
         <androidPackage spec="com.android.support:support-v4:28.0.3"/>
         <androidPackage spec="com.android.support:multidex:1.0.3"/>
       </androidPackages>
